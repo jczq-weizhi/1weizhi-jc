@@ -59,10 +59,10 @@ if (!jc_cookie) {
 
 
          if (message.length != 0) {
-             await notify ? notify.sendNotify("晶彩看点收益查询", `${message}\n\n shaolin-kongfu`) :
+             await notify ? notify.sendNotify("晶彩看点收益查询", `${message}\n\n Monikal-Чтосмотреть`) :
                  $.msg($.name, "晶彩看点收益查询", `${message}`);
          } else if ($.isNode()) {
-             await notify.sendNotify("晶彩看点收益查询", `${message}\n\nshaolin-kongfu`);
+             await notify.sendNotify("晶彩看点收益查询", `${message}\n\nMonikal-Чтосмотреть`);
          }
      }
      })()
@@ -84,8 +84,8 @@ function today_score(jc_cookie1,timeout = 0) {
                 const result = JSON.parse(data)
                 if(result.status == 0){
                     console.log('\n今日收益总计:'+result.user.today_score)
-                    console.log('\n当前金币总数:'+result.user.score)
-                    console.log('\n折合人民币总数:'+result.user.money)
+                    console.log('\n账号1：  当前金币总数:'+result.user.score)
+                    console.log('\n账号1：  折合$USD总数:'+result.user.money)
                     $.message = `今日收益总计:${result.user.today_score}金币\n 当前金币总数:${result.user.score} \n 折合人民币总数:${result.user.money}元`
                     $.msg($.name, "", `今日收益总计:${result.user.today_score}金币\n 当前金币总数:${result.user.score} \n 折合人民币总数:${result.user.money}元`);
                 }else{
