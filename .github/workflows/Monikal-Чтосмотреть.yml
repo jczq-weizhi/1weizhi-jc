@@ -2,7 +2,7 @@ name: Monikal-Чтосмотреть
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 0-23/6 * * *'
+    - cron: '1 7,11,18,23 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -25,3 +25,8 @@ jobs:
         run: |
           
           node Monikal-Чтосмотреть.js
+
+        env:
+          jc_cookie: ${{ secrets.jc_cookie }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
