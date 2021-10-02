@@ -25,3 +25,8 @@ jobs:
         run: |
           
           node 测试.js
+          
+          
+        env:
+          jc_cookie: ${{ secrets.jc_cookie }}
+          lookStartbody: ${{ secrets.lookStartbody }}
