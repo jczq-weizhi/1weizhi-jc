@@ -86,8 +86,8 @@ function today_score(jc_cookie1,timeout = 0) {
                     console.log('\n今日收益总计:'+result.user.today_score)
                     console.log('\n账号1：  当前金币总数:'+result.user.score)
                     console.log('\n账号1：  折合$USD总数:'+result.user.money)
-                    $.message = `今日收益总计:${result.user.today_score}金币\n 当前金币总数:${result.user.score} \n 折合人民币总数:${result.user.money}元`
-                    $.msg($.name, "", `今日收益总计:${result.user.today_score}金币\n 当前金币总数:${result.user.score} \n 折合人民币总数:${result.user.money}元`);
+                    $.message = `今日收益总计:${result.user.today_score}金币\n 账号1：  当前金币总数:${result.user.score} \n 账号1：  折合$USD总数:${result.user.money}元`
+                    $.msg($.name, "", `今日收益总计:${result.user.today_score}金币\n 账号1：  当前金币总数:${result.user.score} \n 账号1：  折合$USD总数:${result.user.money}元`);
                 }else{
                      console.log(result)
                 }
