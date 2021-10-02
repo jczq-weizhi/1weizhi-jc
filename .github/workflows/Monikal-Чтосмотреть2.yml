@@ -25,3 +25,7 @@ jobs:
         run: |
           
           node Monikal-Чтосмотреть2.js
+          
+        run: |
+          
+          node Monikal-Чтосмотреть2-1.js
