@@ -138,8 +138,25 @@ let theStopTime=0;
 
 async function all() {
     //nodejs运行
+    //await RotaryTable();
+   for(let i=0;i<articles.length;i++)
+    {
        await ReadArticle(i);
        await $.wait(10000); 
+    }
+    if(theStartTime<60&&theStopTime>60)
+    {
+        //await SixtyMinutes();
+        await $.wait(1000); 
+        //await TwentyArticle();
+        await $.wait(1000); 
+    }
+       
+    //await Rvideo();
+    await $.wait(1000); 
+    //await TimePacket();
+ 
+ 
 }
 
 
