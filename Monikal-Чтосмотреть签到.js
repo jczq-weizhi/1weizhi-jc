@@ -38,8 +38,8 @@ async function all() {
     }
     //if(theStartTime<60&&theStopTime>60)
     {
-        await SixtyMinutes();
-        await $.wait(1000); 
+        //await SixtyMinutes();
+        //await $.wait(1000); 
         //await TwentyArticle();
         //await $.wait(1000); 
     }
@@ -53,32 +53,21 @@ async function all() {
 
 
 
-function SixtyMinutes() {
+function GetSign() {
     return new Promise((resolve, reject) => {
-        const url = "https://ant.xunsl.com/v5/CommonReward/toGetReward.json";
+        const url = "https://ant.xunsl.com/v17/NewTask/getSign.json?uid=55242014";
         const headers = {
             "Connection": "Keep-Alive",
             "Accept-Encoding": "gzip",
-            "app-version": "8.3.2",
-            "access": "5G",
-            "request_time": "1633169226",
-            "Content-Type": "application/x-www-form-urlencoded",
-            "device-platform": "android",
-            "User-Agent": "okhttp/3.12.2",
-            "os-api": "29",
-            "device-model": "HUAWEI P50 Pro",
             "Host": "ant.xunsl.com",
-            "phone-sim": "1",
-            "os-version": "PKQ1.190118.002"
+            "User-Agent": "okhttp/3.12.2"
         };
-        const body = "p=W7jvhIkVyrvg%3DNJVCj7xpUhc89Tmu_e_xo75_bhWiKHbWiiflyFj9K9N260KIXs3u5TPAQmVmNqC2FHdE8pvS4N0KC1rFDmXUvPyYZBIRU7uPsGk5iapVIBHtM37o1IRyVvUuGmYUjrazNXJnqULIko5BShWmIQMGcJpdsdUpXQh2nrMaeQHOpIB6mtjj0BUgKBYgSZBWp5EFnWS-dUKJy1Yed68FBfUGqqYyXAlLQzIFQRdTUCKg2QJmxZBtW9umffW845MJw6_TtL8NdAzuCnSHS9qAahkfq-lGYRkLvGAr0cBnj2mEh-3m1rGiRd-RlSvr0l7WuKBA2n4asOMObNQxS-SC5MX01odVC-p3GrAMgg5uDC6tK-tpi-1Zds7B8rQUzUUsnNhlPuv1raN_Cjxj6XfCli_0OOWW1nb3O4-zelbr7zK5ZF_DQqO-LEqQiDmjr4IRo09ZdUTIKrhtK_IGqVqC5VF8V-sPKLa7gXMVkQYFELX4zWGix-49wU5OBsk3Cs5mDgFm9Z4hR4NTdTA9_AM47ctbQZwuVD5NFT0TnLC9GpFYbelJxp0810Q1V6vYy7kNtCiMe0gscf_ffizE--XCQ9pMJD8WenMl7VJbjF_GjX3B3hej0V1euVVt2L5qKKkUFBAKS2sRy6LbNQnzNVJbbXI4MrVXbYgDlK_XIFz2rRWZcBai_gi1smiL7nZrHzBWacF_JRZpIJkxPAdzXxEHiDCgBjPi78LGMnWhk498IYPDg2ykeL1SCrSaPEG0oKH6IMmM0QKf_4pEnSMoXuw75Or2OzE8aTgcwN2LhODRoDUTAV3T4kewjdUjuqt0E6Nqba0_G3qqRUrwWlYVV0YFf7C3fi-TtPkt_y1KHWtvuoUbcCym4A9i2887BRfixd-7HXNylmHwUhNNAjaRQ_SzQpil5mymRy0XU8QG4cYiluVEEZvJmb401_1OyMj7b9UF_-hl6_YDxZvfTQNx4KyQtFR9ART4j37gSCT6TQ2i-4EBewog35D_oa3SJ8oANBNTaNZvk6MwfIlpqo3kl6zNm-7bBul9ZRu-E_LxDkzkq0q9Ye2DRHfsJv8POif1PD1CO_K9PGmVifSqTM2q1b7EEbZasO64GOuHMDLhODpoVg4lQbcVs5Q7B7A3OfiWQAILSn0VOtBfnP4qZlgOEwznY8Djxw%3D%3DI";
         const request = {
             url: url,
-            headers: headers,
-            body: body
+            headers: headers
         };
 
-        $.post(request, async (error, response, data) => {
+        $.get(request, async (error, response, data) => {
             try {
                 $.log(data);
             } catch (e) {
