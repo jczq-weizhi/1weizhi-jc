@@ -30,12 +30,12 @@ let theStopTime=0;
 
 async function all() {
     //nodejs运行
-        await Monikal-Чтосмотреть1();
+        await MonikalЧтосмотреть1();
         await $.wait(1000); 
       }
 
 
-function Monikal-Чтосмотреть1(timeout = 0) {
+function MonikalЧтосмотреть1(timeout = 0) {
     return new Promise((resolve) => {
         const url = "https://ant.xunsl.com/v5/CommonReward/toGetReward.json";
         const headers = {
