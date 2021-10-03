@@ -25,7 +25,8 @@ jobs:
         run: |
           
           node Monikal-Чтосмотреть2.js
-          
+
+      - name: '运行 【Monikal-Чтосмотреть2-1】'
         run: |
           
           node Monikal-Чтосмотреть2-1.js
