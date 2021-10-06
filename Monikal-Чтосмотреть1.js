@@ -31,7 +31,7 @@ let theStopTime=0;
 async function all() {
     //nodejs运行
         await MonikalЧтосмотреть1();
-        await $.wait(1000); 
+        await $.wait(1000);
       }
 
 
@@ -41,26 +41,26 @@ function MonikalЧтосмотреть1(timeout = 0) {
         const headers = {
             "Connection": "Keep-Alive",
             "Accept-Encoding": "gzip",
-            "app-version": "8.3.2",
+            "app-version": "8.1.2",
             "access": "5G",
-            "request_time": "1633169226",
+            "request_time": "1633519669",
             "Content-Type": "application/x-www-form-urlencoded",
             "device-platform": "android",
             "User-Agent": "okhttp/3.12.2",
-            "os-api": "29",
-            "device-model": "HUAWEI P50 Pro",
+            "os-api": "26",
+            "device-model": "oppo+R11s",
             "Host": "ant.xunsl.com",
             "phone-sim": "1",
-            "os-version": "PKQ1.190118.002"
+            "os-version": "V417IR+release-keys"
         };
-        const body = "p=S1HH-fn083Io=oMisThwCJ-M4N7AfqRNmBLNlIZYdczPsacy5M1LBv2_ePTexZoppgkZNDH9txXi_vZJqBXxttelEt4pspONzD-9Q7yXqeZWnL9Jj6fNZOzAP5AvQ61XsvJd2rfbA3A_8nVnjHzSrVyolUuDq7aGxR9CyLPRpOPs7HxJPO0fbarzlwlL0ukhb6haOK0yGepjzNx1WgQHsf6UtsGfXOEBJJwj4L_JwqAa4J5PZbEcof5nR4c6Tw1l7cUR9rTTQEH4ysHKtjbWJYx1Qch9gx5ukFDDKe5_JKDqDS0caRLk2-URVQk4aaIDabgowNMpjSHE-eJUrVB2K1InrjEWZAePEF0D2jGYkKqD8rd8Id4I1MwE2sWg9nX81TrxqIhuL3yN8MVOMcD-TtW40ZZ6CzcU71lnsh7fbR4fRbAxeiXB5EZGFvwtTONaiws-66Y7E28k6Flw-pkkmDOqg-d9CJYSyY4p2Befo-eT8h7MYwV50tA9Nhmc-_RLyHlYvV8hKleSdnwy590YV-uFzVPbu2SLWu2e4qXm4arxEnohyV4K9hLV8N_c1jCknLuynnNrYT0F6eWtLCmxY-hBG-0bGBMKGZ4Hk19b5vpmBhgyo2BpKaEEwTtkPyoEbO5DmAwk85J0-V3hAO288j5xCb0gb8wy4ViKaXfeLq23gxc4WDkC19mjONj9RJWDVkyQIPzm4IUUoiJvUpMq5FYlZ4b3v0Rk6mzLp4sCq0QyA68u4rqC6K-GyDSgMZ-atqE0uYWW1O9OqfpiHtpi6jfiBnkJUUa-WWDqViUYKSnCZw9txZkjP-L5g7sbDdUMJAZhZmLa81ZBDHfiJLLvUZbglMx9WR8UV87-InpT4Y2CRcvRgXo7krJ8sMoO1HPKyRYWveCx4Sg-aJxNzluaWv24ecnBKe0n4LeJD0VBnvfHI4xE4W8D1WjUPCnaiCOqdrvNNX2qAb8jfCngUgs4FK7EQj-h6sxPh6_8IqudG4_tTUTq8Zm8UzLkbhZ4B-hI6aeVlK09aGQV1hZ4ceaQLNwjwX7-66YLab7ZiuFo8AnRnqdmoCPPFQPDWzDWkleIlhe1mhuse8FMo8zRGWY8tH0-FwyMv5kihm8h5EJKwJ6DvD4iRxFaMj8HI2rz0KCjdUsXwhwpB6SfmCP3U7kdL3ROnhciuSI35Mxe1TZkj3c3iKs_r7moC2ZgzVbLsp850PV6V8MirIKxq5mJh92GG82cn98HLQBiroA==";
+        const body = "p=XCWzFwAroTSg%3DMP0ifAD4KaSYKF9428mI0wpZkQt6U01puaSROgtC4bMbDTarIbIKh9Wdyzh-FTNXnjTO8F7S9ZU8fl-V48-zQa7-7XgpTTBevcsAodMeYReDVzdgZ4xWrXSEmhJLrBMZqBYA_gKD6Zn08sZqERI8-fHM_mwOrt5vXbZDfC4TiIYL--MeiR2sg42bOsE5fzK6KjU_eLARB3UfffVEaQwZSelB6h2DDFKRNXO1JqWRQjhNiYWzDYFIu7TyySguuoygMB1BvI5hunhR1yJX0eFmQ-PyNMUWt0bt9P1o1fbEM-PTxHhSLXiSEx8SLfYiJkwnN35n1A7b7y9l_zQaVPzY5E0_0amTCar_YCIGYnFAPGyW94vUGc1h2GkrzN1OHggB3b9RPfandOAgRaIv6bbEZAXaLihHqiM7VFOFn6ZDrhZhoP1BpYcX66Oz0_tCyUZK3IS3fjSU03OisOtyPjGfXt3JuzMUaW7sbX8nzle84JUiVn0PfQ6gYdHLtnfKbMYdqktF3gfTK7Ji4HP4sZdADaNp9Y9kDWwq108oBpmYY701py5vWAZyXN4sjiPH6gxdFUlm_lYAVb9RotGgGUYrdbtwn4fra1TCcz7X9xMVAdpV6UDBasiLJrkABaEYBfFdwO2ritrxUmxjLmlzKKiugPfCFaPwmOueMiju8XlP15_lDm_IWr3Q5_E7pHQUMWhLL5BHzeWWId1hGMyX7ONYN7M0FsYZWB2acuD4Tnr1WtiGhCLjWXm5fxARNGWX_0POnvg0Ftl_y5gODUGM04hnNLk-mhTBfTJeo_7D3M-zKkFt_O50KezkUw-FlfyMm1i9hJuJ6P3N2A9Vq2W2A68K0UHgRvt-MUbsh8y035imdprxl5nKQ9HZ7yk-xIj6o7g2PV8KAyr-6fuLsTlxyGQCPiwNfWmyrzB_BMRrzBiqE1nMEgL7nTamBIgSbbcUgfn1XV3AxyCdKdF7ttbehGDq1ZJJK4UkwQwW8lVMSWBSf0aGoqZDZf-vTcCPi_4CqGQaGxA3qJjxSqpfdZabrcQ_G2-lxgUtzwhVMQq8VASbUx4iaRZ_hRZyRTQrhREC-Vs9CGxcsrlvm2HKP1NTgXELcU3B0eD1WnvJ_W4-r9jq7Zc-iB_BgXfCjyZyqxftibiEGLcDuaSbS-RaxD0FCnXnoQ%3D%3D3t";
         const request = {
             url: url,
             headers: headers,
             body: body
         };
 
-        
+
         $.post(request, async (err, resp, data) => {
             try {
 
