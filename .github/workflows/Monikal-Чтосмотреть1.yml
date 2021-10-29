@@ -2,7 +2,7 @@ name: Monikal-Чтосмотреть1
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 21 * * *'
+    - cron: '1 22 * * *'
   watch:
     types: started
   repository_dispatch:
